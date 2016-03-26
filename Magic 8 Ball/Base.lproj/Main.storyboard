@@ -45,8 +45,8 @@
                                     <constraint firstAttribute="trailingMargin" secondItem="pyy-kD-8AM" secondAttribute="trailing" id="zrk-Uf-S61"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="bottom" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0F-f3-inF">
-                                <rect key="frame" x="0.0" y="520" width="600" height="80"/>
+                            <button opaque="NO" contentMode="bottom" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0F-f3-inF">
+                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="YJa-4G-Vgk"/>
                                 </constraints>
