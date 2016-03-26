@@ -14,6 +14,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     @IBOutlet weak var circle: UIImageView!
     
+    @IBOutlet weak var smallUIview: UIView!
+    
     @IBOutlet weak var questionField: UITextField!
     
     @IBOutlet weak var answerLable: UILabel!
@@ -61,6 +63,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
 
     }
 
+        
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -78,7 +81,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     func changeText(sender: AnyObject){
         let tmpGame = EightBallModel()
-        //let pos = arc4random() % UInt32((tmpGame.responseArray?.count)!)
+        let posImage = arc4random() % UInt32((tmpGame.responseArray?.count)!)
         let pos = couterForResponsers()
         
         let imageString = ["circle1","circle2","circle3","circle4","circle5","circle6"]
@@ -86,13 +89,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
             answerLable.alpha = 1
         }
         
-        answerLable.text = tmpGame.responseArray![Int(pos % (tmpGame.responseArray?.count)!)]
+        answerLable.text = tmpGame.responseArray![pos % (tmpGame.responseArray?.count)!]
         
-        if pos == 0{
-            circle.image = UIImage(named: imageString[1])
-        }else{
-            circle.image = UIImage(named: imageString[ pos % imageString.count])
-        }
+        circle.image = UIImage(named: imageString[Int(posImage)])
+        
         
         UIView.animateWithDuration(1, animations: {self.answerLable.alpha = 0})
         

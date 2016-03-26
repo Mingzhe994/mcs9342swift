@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,50 +15,85 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="J5W-pC-HNX">
-                                <rect key="frame" x="-366" y="-737" width="1080" height="1920"/>
+                            <imageView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="J5W-pC-HNX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="shakeButton" translatesAutoresizingMaskIntoConstraints="NO" id="Rte-hV-BiE">
-                                <rect key="frame" x="-345" y="600" width="1080" height="67"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle1" translatesAutoresizingMaskIntoConstraints="NO" id="pyy-kD-8AM">
-                                <rect key="frame" x="21" y="167" width="334" height="334"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign points to yes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbb-D6-Wsa">
-                                <rect key="frame" x="119" y="323" width="136" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.99619600785340312" green="0.99619600785340312" blue="0.99619600785340312" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0F-f3-inF">
-                                <rect key="frame" x="166" y="619" width="42" height="30"/>
-                                <state key="normal" title="Shake"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0K-AT-eeU">
+                                <rect key="frame" x="20" y="50" width="560" height="500"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle1" translatesAutoresizingMaskIntoConstraints="NO" id="pyy-kD-8AM">
+                                        <rect key="frame" x="8" y="8" width="544" height="484"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign points to yes" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbb-D6-Wsa">
+                                        <rect key="frame" x="212" y="240" width="136" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.99619600785340312" green="0.99619600785340312" blue="0.99619600785340312" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="pyy-kD-8AM" firstAttribute="leading" secondItem="m0K-AT-eeU" secondAttribute="leadingMargin" id="8Ss-Nk-k61"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="pyy-kD-8AM" secondAttribute="bottom" id="EZ2-N5-hKt"/>
+                                    <constraint firstItem="Gbb-D6-Wsa" firstAttribute="centerY" secondItem="m0K-AT-eeU" secondAttribute="centerY" id="SW5-nI-oeu"/>
+                                    <constraint firstItem="Gbb-D6-Wsa" firstAttribute="centerX" secondItem="m0K-AT-eeU" secondAttribute="centerX" id="bia-Pk-Apf"/>
+                                    <constraint firstItem="pyy-kD-8AM" firstAttribute="top" secondItem="m0K-AT-eeU" secondAttribute="topMargin" id="m2l-HF-KXh"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="pyy-kD-8AM" secondAttribute="trailing" id="zrk-Uf-S61"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="bottom" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0F-f3-inF">
+                                <rect key="frame" x="0.0" y="520" width="600" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YJa-4G-Vgk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Shake" backgroundImage="shakeButton">
+                                    <color key="titleColor" red="0.33025777908440268" green="0.4830006403729914" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="shakeButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g0Q-Vu-hrP"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ask a question" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CaG-n3-na8">
-                                <rect key="frame" x="55" y="51" width="264" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Ask a question" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CaG-n3-na8">
+                                <rect key="frame" x="20" y="20" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="go"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.36114595460060639" green="1" blue="0.98170727556176363" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="J5W-pC-HNX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2jD-HW-eNf"/>
+                            <constraint firstItem="J5W-pC-HNX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3EL-Uz-IgH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L0F-f3-inF" secondAttribute="trailing" constant="-20" id="45H-0M-81w"/>
+                            <constraint firstItem="m0K-AT-eeU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6Se-3z-czu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="L0F-f3-inF" secondAttribute="bottom" id="HIG-qh-eiA"/>
+                            <constraint firstItem="m0K-AT-eeU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LbZ-lE-Ts5"/>
+                            <constraint firstItem="m0K-AT-eeU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Lh7-bi-Xhg"/>
+                            <constraint firstItem="CaG-n3-na8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MFs-Lx-rTF"/>
+                            <constraint firstItem="CaG-n3-na8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="U9P-gd-RSA"/>
+                            <constraint firstItem="L0F-f3-inF" firstAttribute="top" secondItem="m0K-AT-eeU" secondAttribute="bottom" id="URc-EV-jut"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="J5W-pC-HNX" secondAttribute="bottom" id="ZTk-eP-nDI"/>
+                            <constraint firstItem="L0F-f3-inF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="kJI-2g-tc3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CaG-n3-na8" secondAttribute="trailing" id="l9Y-iC-B3Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m0K-AT-eeU" secondAttribute="trailing" id="qlp-Mc-DbX"/>
+                            <constraint firstAttribute="trailing" secondItem="J5W-pC-HNX" secondAttribute="trailing" id="vKZ-Bo-Yn9"/>
+                        </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="answerLable" destination="Gbb-D6-Wsa" id="sa4-AE-Hcu"/>
                         <outlet property="backGround" destination="J5W-pC-HNX" id="4rF-yW-lj0"/>
                         <outlet property="circle" destination="pyy-kD-8AM" id="R5a-bM-9w2"/>
                         <outlet property="questionField" destination="CaG-n3-na8" id="mgc-V9-87H"/>
+                        <outlet property="smallUIview" destination="m0K-AT-eeU" id="DXo-pJ-G3p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="215.5" y="194.5"/>
+            <point key="canvasLocation" x="259" y="256"/>
         </scene>
     </scenes>
     <resources>
