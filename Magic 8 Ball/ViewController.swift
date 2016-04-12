@@ -76,7 +76,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
     
     func couterForResponsers() -> Int{
-        return count++
+         count += 1
+        return count
     }
     
     func changeText(sender: AnyObject){
