@@ -20,8 +20,12 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     @IBOutlet weak var answerLable: UILabel!
     
+    var questionResponseArray = [QuestionResponseModel]()
+    
     @IBAction func shakeButtonPress(sender: AnyObject) {
-        changeText(self)
+        //changeText(self)
+        
+        
     }
     
     var count = 0
@@ -60,6 +64,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
             print(myGame.responseArray![index])
             
         }
+        
+        
+        if let loadedQuestions = NSKeyedUnarchiver.unarchiveObjectWithFile(QuestionResponseModel.ArchiveURL.path!) as? [QuestionResponseModel] {
+            questionResponseArray = loadedQuestions
+        }
 
     }
 
@@ -71,7 +80,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
 
     func textFieldShouldReturn(questionField: UITextField) -> Bool {
         questionField.resignFirstResponder()
-        changeText(questionField)
+        changeText(questionField.text!)
         return false
     }
     
@@ -90,18 +99,36 @@ class ViewController: UIViewController,UITextFieldDelegate {
             answerLable.alpha = 1
         }
         
-        answerLable.text = tmpGame.responseArray![pos % (tmpGame.responseArray?.count)!]
+        let labAnswer = tmpGame.responseArray![pos % (tmpGame.responseArray?.count)!]
+        
+        answerLable.text = labAnswer
+        
+        
         
         circle.image = UIImage(named: imageString[Int(posImage)])
         
-        
+        questionResponseArray.append(QuestionResponseModel(question: sender as! String, answer: labAnswer))
         UIView.animateWithDuration(1, animations: {self.answerLable.alpha = 0})
         
         
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(questionResponseArray, toFile: QuestionResponseModel.ArchiveURL.path!)
+        if(isSuccessfulSave) {
+            print("Successful save")
+        }
     }
     
     //override func viewDidAppear(animated: Bool){
     //    UIView.animateWithDuration(1, animations: {self.answerLable.alpha = 0})
     //}
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        
+        let nav = segue.destinationViewController as! UINavigationController
+        let addEventViewController = nav.topViewController as! HistoryViewController
+        addEventViewController.questionArray = questionResponseArray
+        
+    }
 }
 

@@ -10,14 +10,36 @@ import Foundation
 
 class QuestionResponseModel:NSObject, NSCoding{
     
-    required init(coder decoder: NSCoder) {
-        super.init()
+    var question: String
+    var answer: String
+    
+    static let DocumentsDirectory = NSFileManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first!
+    static let ArchiveURL = DocumentsDirectory.URLByAppendingPathComponent("questions.plist")
+    
+    // Memberwise initializer
+    init(question: String, answer: String){
+        self.question = question
+        self.answer = answer
+        
     }
     
-    var storeArray = [String:String]()
+    // MARK: NSCoding
     
-    func setArray(question: String, answer: String){
-        storeArray.
+    required convenience init?(coder decoder: NSCoder) {
+        guard let question = decoder.decodeObjectForKey("question") as? String,
+            let answer = decoder.decodeObjectForKey("answer") as? String
+            else { return nil }
+
+        self.init(
+            question: question,
+            answer: answer
+        )
     }
     
+    func encodeWithCoder(coder: NSCoder) {
+        coder.encodeObject(self.question, forKey: "question")
+        coder.encodeObject(self.answer, forKey: "answer")
+        
+    }
 }
+

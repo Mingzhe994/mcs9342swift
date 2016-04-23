@@ -16,6 +16,9 @@
 		179F14721C8E4A2F00451061 /* Magic_8_BallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179F14711C8E4A2F00451061 /* Magic_8_BallTests.swift */; };
 		179F147D1C8E4A2F00451061 /* Magic_8_BallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179F147C1C8E4A2F00451061 /* Magic_8_BallUITests.swift */; };
 		179F148B1C8E4E4800451061 /* EightBallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179F148A1C8E4E4800451061 /* EightBallModel.swift */; };
+		17D841331CBC94EA00F16224 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D841321CBC94EA00F16224 /* HistoryViewController.swift */; };
+		17D841351CC5BF3900F16224 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D841341CC5BF3900F16224 /* AVFoundation.framework */; };
+		17D841371CC5CA6100F16224 /* Untitled.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 17D841361CC5CA6100F16224 /* Untitled.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		179F147C1C8E4A2F00451061 /* Magic_8_BallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic_8_BallUITests.swift; sourceTree = "<group>"; };
 		179F147E1C8E4A2F00451061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		179F148A1C8E4E4800451061 /* EightBallModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EightBallModel.swift; sourceTree = "<group>"; };
+		17D841321CBC94EA00F16224 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		17D841341CC5BF3900F16224 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		17D841361CC5CA6100F16224 /* Untitled.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Untitled.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17D841351CC5BF3900F16224 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,7 @@
 		179F14501C8E4A2E00451061 = {
 			isa = PBXGroup;
 			children = (
+				17D841341CC5BF3900F16224 /* AVFoundation.framework */,
 				179F145B1C8E4A2E00451061 /* Magic 8 Ball */,
 				179F14701C8E4A2F00451061 /* Magic 8 BallTests */,
 				179F147B1C8E4A2F00451061 /* Magic 8 BallUITests */,
@@ -104,10 +112,12 @@
 				179F145C1C8E4A2F00451061 /* AppDelegate.swift */,
 				179F145E1C8E4A2F00451061 /* ViewController.swift */,
 				179F14601C8E4A2F00451061 /* Main.storyboard */,
+				17D841321CBC94EA00F16224 /* HistoryViewController.swift */,
 				179F148A1C8E4E4800451061 /* EightBallModel.swift */,
 				179F14631C8E4A2F00451061 /* Assets.xcassets */,
 				179F14651C8E4A2F00451061 /* LaunchScreen.storyboard */,
 				179F14681C8E4A2F00451061 /* Info.plist */,
+				17D841381CC5CA7500F16224 /* Audio */,
 				171667791CB34943009347E7 /* QuestionResponseModel.swift */,
 			);
 			path = "Magic 8 Ball";
@@ -129,6 +139,14 @@
 				179F147E1C8E4A2F00451061 /* Info.plist */,
 			);
 			path = "Magic 8 BallUITests";
+			sourceTree = "<group>";
+		};
+		17D841381CC5CA7500F16224 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				17D841361CC5CA6100F16224 /* Untitled.m4a */,
+			);
+			name = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				179F14671C8E4A2F00451061 /* LaunchScreen.storyboard in Resources */,
+				17D841371CC5CA6100F16224 /* Untitled.m4a in Resources */,
 				179F14641C8E4A2F00451061 /* Assets.xcassets in Resources */,
 				179F14621C8E4A2F00451061 /* Main.storyboard in Resources */,
 			);
@@ -266,6 +285,7 @@
 				179F145F1C8E4A2F00451061 /* ViewController.swift in Sources */,
 				179F145D1C8E4A2F00451061 /* AppDelegate.swift in Sources */,
 				1716677A1CB34943009347E7 /* QuestionResponseModel.swift in Sources */,
+				17D841331CBC94EA00F16224 /* HistoryViewController.swift in Sources */,
 				179F148B1C8E4E4800451061 /* EightBallModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
