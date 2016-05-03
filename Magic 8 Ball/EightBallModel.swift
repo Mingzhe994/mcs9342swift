@@ -9,7 +9,7 @@
 import Foundation
 
 class EightBallModel:CustomStringConvertible,CustomDebugStringConvertible {
-    static let initailRespenseArray = ["🐎","Mom","Dad","Cousin"]
+    static let initailRespenseArray = ["frigate","marine","tank"]
     
     var responseArray :[String]?
     

@@ -13,10 +13,15 @@ class HistoryViewController: UITableViewController{
 
     var questionArray = [QuestionResponseModel]()
     var audioPlayer: AVAudioPlayer?
+    var textToShow: String = ""
     
     @IBAction func back(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
         
+    }
+    
+    
+    @IBAction func clicktotextView(sender: AnyObject) {
     }
     
 
@@ -68,8 +73,10 @@ class HistoryViewController: UITableViewController{
     
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let url = NSBundle.mainBundle().URLForResource("Untitled", withExtension: "m4a")
-        print("hello")
+        
+        textToShow = questionArray[indexPath.row].answer
+        
+        let url = NSBundle.mainBundle().URLForResource(textToShow, withExtension: "wav")
         
         do {
             if let u = url {
@@ -80,6 +87,17 @@ class HistoryViewController: UITableViewController{
             NSLog("Unresolved error \(error)")
             // SHOW ALERT OR SOMETHING
         }
+        print("Here")
+        //self.performSegueWithIdentifier("showText", sender: self)
+        
+        /*
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let showTextViewController = storyboard.instantiateViewControllerWithIdentifier("showTextViewController") as? ShowTextViewController {
+            showTextViewController.showTheText = textToShow
+            self.navigationController?.pushViewController(showTextViewController, animated: true)
+        }*/
+        
+        performSegueWithIdentifier("showTextSegue", sender: self)
     }
     
     
@@ -125,5 +143,14 @@ class HistoryViewController: UITableViewController{
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "showTextSegue"{
+            let show = segue.destinationViewController as! ShowTextViewController
+            
+            show.showTheText = textToShow
+        }
+    }
 }

@@ -10,15 +10,20 @@
 		1716677A1CB34943009347E7 /* QuestionResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171667791CB34943009347E7 /* QuestionResponseModel.swift */; };
 		179F145D1C8E4A2F00451061 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179F145C1C8E4A2F00451061 /* AppDelegate.swift */; };
 		179F145F1C8E4A2F00451061 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179F145E1C8E4A2F00451061 /* ViewController.swift */; };
-		179F14621C8E4A2F00451061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179F14601C8E4A2F00451061 /* Main.storyboard */; };
 		179F14641C8E4A2F00451061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 179F14631C8E4A2F00451061 /* Assets.xcassets */; };
 		179F14671C8E4A2F00451061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179F14651C8E4A2F00451061 /* LaunchScreen.storyboard */; };
 		179F14721C8E4A2F00451061 /* Magic_8_BallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179F14711C8E4A2F00451061 /* Magic_8_BallTests.swift */; };
 		179F147D1C8E4A2F00451061 /* Magic_8_BallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179F147C1C8E4A2F00451061 /* Magic_8_BallUITests.swift */; };
 		179F148B1C8E4E4800451061 /* EightBallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179F148A1C8E4E4800451061 /* EightBallModel.swift */; };
+		17AA68841CD7F583005DC49A /* ShowTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AA68831CD7F583005DC49A /* ShowTextViewController.swift */; };
+		17AA688A1CD801E6005DC49A /* battlec.wav in Resources */ = {isa = PBXBuildFile; fileRef = 17AA68851CD801E6005DC49A /* battlec.wav */; };
+		17AA688B1CD801E6005DC49A /* dropship.wav in Resources */ = {isa = PBXBuildFile; fileRef = 17AA68861CD801E6005DC49A /* dropship.wav */; };
+		17AA688C1CD801E6005DC49A /* frigate.wav in Resources */ = {isa = PBXBuildFile; fileRef = 17AA68871CD801E6005DC49A /* frigate.wav */; };
+		17AA688D1CD801E6005DC49A /* marine.wav in Resources */ = {isa = PBXBuildFile; fileRef = 17AA68881CD801E6005DC49A /* marine.wav */; };
+		17AA688E1CD801E6005DC49A /* tank.wav in Resources */ = {isa = PBXBuildFile; fileRef = 17AA68891CD801E6005DC49A /* tank.wav */; };
+		17AA68911CD81391005DC49A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17AA688F1CD81391005DC49A /* Main.storyboard */; };
 		17D841331CBC94EA00F16224 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D841321CBC94EA00F16224 /* HistoryViewController.swift */; };
 		17D841351CC5BF3900F16224 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D841341CC5BF3900F16224 /* AVFoundation.framework */; };
-		17D841371CC5CA6100F16224 /* Untitled.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 17D841361CC5CA6100F16224 /* Untitled.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +48,6 @@
 		179F14591C8E4A2E00451061 /* Magic 8 Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magic 8 Ball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		179F145C1C8E4A2F00451061 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		179F145E1C8E4A2F00451061 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		179F14611C8E4A2F00451061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		179F14631C8E4A2F00451061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		179F14661C8E4A2F00451061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		179F14681C8E4A2F00451061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,9 +58,15 @@
 		179F147C1C8E4A2F00451061 /* Magic_8_BallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic_8_BallUITests.swift; sourceTree = "<group>"; };
 		179F147E1C8E4A2F00451061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		179F148A1C8E4E4800451061 /* EightBallModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EightBallModel.swift; sourceTree = "<group>"; };
+		17AA68831CD7F583005DC49A /* ShowTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowTextViewController.swift; sourceTree = "<group>"; };
+		17AA68851CD801E6005DC49A /* battlec.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = battlec.wav; sourceTree = "<group>"; };
+		17AA68861CD801E6005DC49A /* dropship.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dropship.wav; sourceTree = "<group>"; };
+		17AA68871CD801E6005DC49A /* frigate.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = frigate.wav; sourceTree = "<group>"; };
+		17AA68881CD801E6005DC49A /* marine.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = marine.wav; sourceTree = "<group>"; };
+		17AA68891CD801E6005DC49A /* tank.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tank.wav; sourceTree = "<group>"; };
+		17AA68901CD81391005DC49A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17D841321CBC94EA00F16224 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		17D841341CC5BF3900F16224 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		17D841361CC5CA6100F16224 /* Untitled.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Untitled.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +119,10 @@
 		179F145B1C8E4A2E00451061 /* Magic 8 Ball */ = {
 			isa = PBXGroup;
 			children = (
+				17AA688F1CD81391005DC49A /* Main.storyboard */,
 				179F145C1C8E4A2F00451061 /* AppDelegate.swift */,
 				179F145E1C8E4A2F00451061 /* ViewController.swift */,
-				179F14601C8E4A2F00451061 /* Main.storyboard */,
+				17AA68831CD7F583005DC49A /* ShowTextViewController.swift */,
 				17D841321CBC94EA00F16224 /* HistoryViewController.swift */,
 				179F148A1C8E4E4800451061 /* EightBallModel.swift */,
 				179F14631C8E4A2F00451061 /* Assets.xcassets */,
@@ -144,7 +155,11 @@
 		17D841381CC5CA7500F16224 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				17D841361CC5CA6100F16224 /* Untitled.m4a */,
+				17AA68851CD801E6005DC49A /* battlec.wav */,
+				17AA68861CD801E6005DC49A /* dropship.wav */,
+				17AA68871CD801E6005DC49A /* frigate.wav */,
+				17AA68881CD801E6005DC49A /* marine.wav */,
+				17AA68891CD801E6005DC49A /* tank.wav */,
 			);
 			name = Audio;
 			sourceTree = "<group>";
@@ -255,9 +270,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				179F14671C8E4A2F00451061 /* LaunchScreen.storyboard in Resources */,
-				17D841371CC5CA6100F16224 /* Untitled.m4a in Resources */,
+				17AA688C1CD801E6005DC49A /* frigate.wav in Resources */,
+				17AA688D1CD801E6005DC49A /* marine.wav in Resources */,
+				17AA68911CD81391005DC49A /* Main.storyboard in Resources */,
 				179F14641C8E4A2F00451061 /* Assets.xcassets in Resources */,
-				179F14621C8E4A2F00451061 /* Main.storyboard in Resources */,
+				17AA688E1CD801E6005DC49A /* tank.wav in Resources */,
+				17AA688A1CD801E6005DC49A /* battlec.wav in Resources */,
+				17AA688B1CD801E6005DC49A /* dropship.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +306,7 @@
 				1716677A1CB34943009347E7 /* QuestionResponseModel.swift in Sources */,
 				17D841331CBC94EA00F16224 /* HistoryViewController.swift in Sources */,
 				179F148B1C8E4E4800451061 /* EightBallModel.swift in Sources */,
+				17AA68841CD7F583005DC49A /* ShowTextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,20 +342,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		179F14601C8E4A2F00451061 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				179F14611C8E4A2F00451061 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		179F14651C8E4A2F00451061 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				179F14661C8E4A2F00451061 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		17AA688F1CD81391005DC49A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17AA68901CD81391005DC49A /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

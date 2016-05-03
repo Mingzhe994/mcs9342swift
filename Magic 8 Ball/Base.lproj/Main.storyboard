@@ -20,7 +20,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="McM-yY-QdJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="501" y="967"/>
+            <point key="canvasLocation" x="259" y="1025"/>
         </scene>
         <!--History View Controller-->
         <scene sceneID="WMx-Jx-9bw">
@@ -62,16 +62,54 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="rXB-Na-b6p">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="BIH-Ph-Csm">
+                        <barButtonItem key="leftBarButtonItem" title="Done" id="BIH-Ph-Csm">
                             <connections>
                                 <action selector="back:" destination="1YH-9w-TRr" id="44w-fz-jKV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="kg3-dw-Wn2" kind="show" identifier="showTextSegue" id="exO-VH-0AX"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U2o-Kq-8Ur" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1203" y="769"/>
+            <point key="canvasLocation" x="973" y="1025"/>
+        </scene>
+        <!--Show Text View Controller-->
+        <scene sceneID="G1P-DJ-Ezj">
+            <objects>
+                <viewController storyboardIdentifier="showTextViewController" id="kg3-dw-Wn2" customClass="ShowTextViewController" customModule="Magic_8_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bC9-Xg-wXo"/>
+                        <viewControllerLayoutGuide type="bottom" id="ps1-bU-Nu9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MTB-I4-7Qb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tu-ik-eR7">
+                                <rect key="frame" x="279" y="289.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6tu-ik-eR7" firstAttribute="centerY" secondItem="MTB-I4-7Qb" secondAttribute="centerY" id="9ab-on-2gh"/>
+                            <constraint firstItem="6tu-ik-eR7" firstAttribute="centerX" secondItem="MTB-I4-7Qb" secondAttribute="centerX" id="OMf-cH-afo"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="showText" destination="6tu-ik-eR7" id="nC6-Sx-kgd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Shr-2h-RXE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672" y="1025"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">

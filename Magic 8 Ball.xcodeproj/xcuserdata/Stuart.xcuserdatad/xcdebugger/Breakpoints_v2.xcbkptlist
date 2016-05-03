@@ -185,11 +185,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Magic 8 Ball/HistoryViewController.swift"
-            timestampString = "482723606.341147"
+            timestampString = "483929155.784948"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -208,6 +208,69 @@
             endingLineNumber = "23"
             landmarkName = "ViewController"
             landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Magic 8 Ball/HistoryViewController.swift"
+            timestampString = "483915930.911581"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "HistoryViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Magic_8_Ball.HistoryViewController.init (style : __C.UITableViewStyle) -&gt; Magic_8_Ball.HistoryViewController"
+                  moduleName = "Magic 8 Ball"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Stuart/Documents/mcs9342/Magic%208%20Ball/Magic%208%20Ball/HistoryViewController.swift"
+                  timestampString = "483916502.756222"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Magic_8_Ball.HistoryViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Magic_8_Ball.HistoryViewController"
+                  moduleName = "Magic 8 Ball"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Stuart/Documents/mcs9342/Magic%208%20Ball/Magic%208%20Ball/HistoryViewController.swift"
+                  timestampString = "483916502.756618"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Magic_8_Ball.HistoryViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Magic_8_Ball.HistoryViewController&gt;"
+                  moduleName = "Magic 8 Ball"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Stuart/Documents/mcs9342/Magic%208%20Ball/Magic%208%20Ball/HistoryViewController.swift"
+                  timestampString = "483916502.756946"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

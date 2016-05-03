@@ -29,7 +29,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
     
     var count = 0
-    let extraR = ["God father","good"]
+    let extraR = ["battlec","dropship"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
